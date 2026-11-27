@@ -55,3 +55,7 @@ This separate checkout adds `pr_review.py`, a dependency-free, read-only local G
 See [the runnable local example and evidence contract](docs/PR_REVIEW.md), [the implementation spec](docs/PR_REVIEW_SPEC.md), and [the evaluation protocol and measured results](docs/EVALUATION.md). The original `factory.py` commands and browser simulation are unchanged. This local repository has no remote or hosting configuration; it is independent of the published Review Lab.
 
 Human `accept`/`reject`/`defer` dispositions are now available through `pr_review.py disposition`, with validated history via `pr_review.py dispositions`. Both require the exact retained bundle fingerprint; records remain local and separate from immutable evidence. See [the disposition commands and limits](docs/PR_REVIEW.md#human-acceptrejectdefer-dispositions).
+
+## Retail data-contract evaluation
+
+See [Retail data contract review](docs/RETAIL_EVAL.md) for the public development fixture, scoring and Qodo comparison protocol.

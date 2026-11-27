@@ -1,0 +1,8 @@
+{
+  "release": "Fictional customer portal 0.3",
+  "goal": "Show order status on the account page",
+  "checks": [
+    {"name": "Order status smoke check", "status": "fail", "required": true},
+    {"name": "Support wording review", "status": "pass", "required": false}
+  ]
+}

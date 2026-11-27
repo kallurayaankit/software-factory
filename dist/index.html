@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A human-reviewed release workflow simulation."><title>Software Factory | Review Lab</title><link rel="stylesheet" href="styles.css"><script type="module" src="app.mjs"></script></head>
+<body><header><div class="frame bar"><span class="brand"><span aria-hidden="true">▤</span> Software Factory</span><span class="version">REVIEW LAB / V0.3</span></div></header>
+<main class="frame"><section class="intro"><p class="kicker">RELEASE ENGINEERING · TIER 1</p><h1>Show the evidence.<br>Then decide what ships.</h1><p>Try a release review using a fictional brief. Run the simulated checks, inspect the result, and record a local decision. Nothing is sent or deployed.</p></section>
+<div class="grid"><section class="panel"><div class="section-title"><p class="kicker">INPUT</p><h2>Release brief</h2></div>
+<label for="scenario">Sample scenario</label><select id="scenario"><option value="ready">Ready · all required checks pass</option><option value="blocked">Blocked · required regression fails</option><option value="pending">Pending · required test not run</option></select>
+<div id="brief"></div><button id="run" class="primary" type="button">Run simulated review</button></section>
+<section class="panel review"><div class="section-title"><p class="kicker">OUTPUT</p><h2>Decision &amp; evidence</h2></div>
+<p id="status" class="status" role="status" aria-live="polite">Run a review to see the result.</p><ul id="checks" class="checks"></ul>
+<div id="gate" hidden><label class="confirm"><input id="confirm" type="checkbox"> I’ve reviewed the required checks.</label><button id="approve" type="button" disabled>Record local approval</button></div><button id="download" type="button" hidden>Download review JSON</button></section></div>
+<aside><h2>What the demo proves</h2><p>Required checks must pass before a human can approve a review. This demo does not run real CI, call a model, connect to GitHub, or authenticate the reviewer. Reloading clears the session. Download the review if you want a copy.</p></aside></main></body></html>

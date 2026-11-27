@@ -1,0 +1,9 @@
+{
+  "release": "Fictional customer portal 0.2",
+  "goal": "Add a read-only order history view",
+  "checks": [
+    {"name": "Order history smoke check", "status": "pass", "required": true},
+    {"name": "Order totals regression check", "status": "pass", "required": true},
+    {"name": "Help centre wording review", "status": "pending", "required": false}
+  ]
+}

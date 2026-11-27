@@ -1,0 +1,17 @@
+name: Verify starter
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: python3 -m compileall -q factory.py test_factory.py
+      - run: python3 -m unittest -v
+      - run: node --test tests/demo.test.mjs

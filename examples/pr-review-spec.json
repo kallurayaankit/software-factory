@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "title": "Clarify greeting documentation",
+  "approval": {
+    "approved": true,
+    "reviewer": "Synthetic example reviewer"
+  },
+  "allowed_paths": ["greeting.py"],
+  "requirements": [
+    {"id": "R1", "text": "Keep the greeting function behavior unchanged."}
+  ]
+}

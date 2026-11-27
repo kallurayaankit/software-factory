@@ -1,0 +1,14 @@
+{
+  "source": "https://www3.wesfarmers.com.au/docs/default-source/asx-announcements/2026-full-year-results-briefing-presentation-20260826214549.pdf",
+  "source_slide": 11,
+  "metric": "divisional_sales",
+  "unit": "AUD_million",
+  "rows": [
+    {"segment": "bunnings_group", "year": 2025, "value": 19560},
+    {"segment": "bunnings_group", "year": 2026, "value": 20331},
+    {"segment": "kmart_group", "year": 2025, "value": 11341},
+    {"segment": "kmart_group", "year": 2026, "value": 11655},
+    {"segment": "officeworks", "year": 2025, "value": 3547},
+    {"segment": "officeworks", "year": 2026, "value": 3679}
+  ]
+}
